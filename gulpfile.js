@@ -11,10 +11,10 @@ const htmlmin = require('gulp-htmlmin');
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: 'dist'
+            baseDir: './'
         }
     });
-    gulp.watch('index.html').on('change', browserSync.reload);
+    gulp.watch('./src/index.html').on('change', browserSync.reload);
 });
 
 gulp.task('styles', function() {
@@ -35,7 +35,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
     gulp.watch('src/scss/**/*.+(scss|sass|css)', gulp.parallel('styles'));
-    gulp.watch('*.html').on('change', gulp.parallel('html'));
+    gulp.watch('src/index.html').on('change', gulp.parallel('html'));
     gulp.watch('src/js/*.js', gulp.parallel('scripts'));
 });
 
