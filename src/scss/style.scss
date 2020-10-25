@@ -1,0 +1,39 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+@import 'libs/slick';
+@import 'libs/animate';
+
+
+@import 'base/variables';
+@import 'base/animations';
+
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+body {
+    //background: #000;
+    background: url('../img/bg.jpg') center (center/cover) no-repeat;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@import 'blocks/title';
+
+
+@import 'blocks/header';
+@import 'blocks/carousel';
+@import 'blocks/shop';
+@import 'blocks/about';
+@import 'blocks/magazine';
+@import 'blocks/contact';
+@import 'blocks/slide';
+@import 'blocks/page-up';
+
+
+@import 'base/media';
+ 
