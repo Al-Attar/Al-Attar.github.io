@@ -255,6 +255,10 @@
 }
  
 @media (max-width: 575px) {
+    body {
+        background: rgb(26, 22, 22);
+        //background: url('../img/bg-mobile.jpg') center (center/cover) no-repeat;
+    }
     .header {
         min-height: 50px;
         &__menu {
@@ -268,7 +272,7 @@
             align-items: center;
             top: 0;
             left: -100%;
-            width: 50%;
+            width: 60%;
             height: 100vh;
             padding: 20px 15px;
             background-color: rgba(0,0,0, .8);
@@ -284,14 +288,13 @@
 			border: none;
             margin: 15px 0;
             width: 100%;
-            font-size: 26px;
-            text-align: center;
+           text-align: center;
             a {
                 border: none;
             }
         }
 		&__link { 
-            font-size: 21.5px;
+            font-size: 21px;
             font-weight: 700;
             text-decoration: none;
             &:hover {

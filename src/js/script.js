@@ -203,3 +203,5 @@ window.addEventListener('DOMContentLoaded', function () {
     slider.goTo('next');
 });
  */
+
+ 
